@@ -4,6 +4,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/next";
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -33,6 +34,7 @@ export default function RootLayout({
         <Nav />
         <main>{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
