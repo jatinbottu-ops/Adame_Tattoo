@@ -446,6 +446,7 @@ export default function HomePage() {
                 aspectRatio: "3/4",
                 overflow: "hidden",
                 cursor: "pointer",
+                display: isMobile && i === 2 ? "none" : undefined,
               }}
             >
               <Image
